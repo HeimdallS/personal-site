@@ -3,6 +3,11 @@
     display: flex;
   }
 
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+
   &__icon {
     margin-right: 1rem;
     width: 1.5rem;
