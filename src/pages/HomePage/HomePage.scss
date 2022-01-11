@@ -27,8 +27,8 @@
     position: absolute;
     display: block;
     list-style: none;
-    width: 1.563rem;
-    height: 1.563rem;
+    width: 25px;
+    height: 25px;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 20s linear infinite;
     bottom: -150px;
@@ -36,13 +36,13 @@
 
     &--1 {
       left: 86%;
-      width: 30px;
-      height: 30px;
+      width: 80px;
+      height: 80px;
       animation-delay: 0s;
     }
 
     &--2 {
-      left: 23%;
+      left: 12%;
       width: 30px;
       height: 30px;
       animation-delay: 1.5s;
@@ -51,14 +51,14 @@
 
     &--3 {
       left: 70%;
-      width: 150px;
-      height: 150px;
-      animation-delay: 0s;
-      animation-duration: 5.5s;
+      width: 100px;
+      height: 100px;
+      animation-delay: 5.5s;
+      animation-duration: 10s;
     }
 
     &--4 {
-      left: 70%;
+      left: 42%;
       width: 150px;
       height: 150px;
       animation-delay: 0s;
