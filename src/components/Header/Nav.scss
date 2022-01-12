@@ -1,16 +1,11 @@
-.nav {
-  &__icons {
+.header {
+  &__routes {
     display: flex;
+    padding-left: 0;
   }
 
-  &__link {
-    text-decoration: none;
-    color: black;
-  }
-
-  &__icon {
-    margin-right: 1rem;
-    width: 1.5rem;
-    height: 1.5rem;
+  &__route {
+    list-style-type: none;
+    padding-right: 3rem;
   }
 }

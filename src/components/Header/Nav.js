@@ -5,11 +5,10 @@ import './Nav.scss';
 export default function Header() {
 
     return (
-        <nav>
-            <h1>Heimdall Sham</h1>
-            <ul>
-                <li></li>
-                <li></li>
+        <nav className="header">
+            <ul className='header__routes'>
+                <li className='header__route'>About</li>
+                <li className='header__route'>Projects</li>
             </ul>
         </nav>
     )

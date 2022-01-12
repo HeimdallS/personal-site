@@ -6,10 +6,10 @@ import './HomePage.scss';
 export default function HomePage() {
     return (
         <main className="content">
-            <h2>Hello, and thanks for viewing my page.</h2>
+            <h2>Hey there, thanks for viewing my page.</h2>
             <div className="content__nav-icons">
                 <a href="https://www.linkedin.com/in/heimdall-sham/" className='nav__link'>
-                    <BsIcon.BsLinkedin className='content__nav-icon' href="https://www.linkedin.com/feed/"/>
+                    <BsIcon.BsLinkedin className='content__nav-icon'/>
                 </a>
                 <a href="https://github.com/HeimdallS" className='nav__link'>
                     <BsIcon.BsGithub className='content__nav-icon'/>
