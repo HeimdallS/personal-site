@@ -1,7 +1,12 @@
+@use "../../partials/mixins.scss" as *;
+@use "../../partials/variables.scss" as *;
+
 .content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
   &__container {
     display: flex;
-    width: 100vw;
   }
 
   &__text-container {
