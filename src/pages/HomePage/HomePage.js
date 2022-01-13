@@ -9,21 +9,22 @@ export default function HomePage() {
         <main className="content">
             <div className="content__container">
                 <div className="content__text-container">
-                    <h2>Hey there, thanks for viewing my page.</h2>
-                    <p className="content__mission-statement">
-                        My name's Heimdall Sham and i'm a full stack web developer. I pride myself on my ability to learn and adapt 
-                        to new technologies quickly, and am proficient with HTML/CSS, JavaScript, React, Node, and a multitidue of 
+                    <h2 className="content__subhead">Hey there, thanks for viewing my page.</h2>
+                    <p className="content__personal-statement">
+                        My name's Heimdall Sham and i'm a full stack web developer. I pride myself on my proficient with HTML/CSS, JavaScript, React, Node, and a multitidue of 
                         other frameworks and libraries. Enjoy perusing my portfolio, and please feel free to reach out!   
                     </p>
-                    <a href="https://www.linkedin.com/in/heimdall-sham/" className='nav__link'>
-                    <BsIcon.BsLinkedin className='content__nav-icon'/>
-                    </a>
-                    <a href="https://github.com/HeimdallS" className='nav__link'>
-                        <BsIcon.BsGithub className='content__nav-icon'/>
-                    </a>
-                    <a href="mailto:sham.heim@gmail.com" className='nav__link'>
-                        <AiIcon.AiOutlineMail className='content__nav-icon'/>
-                    </a>
+                    <div className="content__link-container">
+                        <a href="https://www.linkedin.com/in/heimdall-sham/" className='content__nav-link'>
+                        <BsIcon.BsLinkedin className='content__nav-icon'/>
+                        </a>
+                        <a href="https://github.com/HeimdallS" className='content__nav-link'>
+                            <BsIcon.BsGithub className='content__nav-icon'/>
+                        </a>
+                        <a href="mailto:sham.heim@gmail.com" className='content__nav-link'>
+                            <AiIcon.AiOutlineMail className='content__nav-icon'/>
+                        </a>
+                    </div>
                 </div>
                 <img src={stars} alt="star gazing" className='content__profile-pic' />
             </div>

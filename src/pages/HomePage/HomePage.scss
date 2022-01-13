@@ -2,15 +2,33 @@
 @use "../../partials/variables.scss" as *;
 
 .content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-
   &__container {
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 27rem;
+  }
+
+  &__subhead {
+    margin: 0;
+  }
+
+  &__personal-statement {
+    margin: 0;
+    text-align: center;
+  }
+
+  &__link-container {
+    display: flex;
+    width: 27rem;
+    justify-content: space-around;
   }
 
   &__nav-icons {
@@ -29,8 +47,8 @@
   }
 
   &__profile-pic {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
   }
 
