@@ -1,11 +1,11 @@
 .header {
   &__routes {
     display: flex;
-    padding-left: 0;
+    justify-content: flex-end;
   }
 
   &__route {
     list-style-type: none;
-    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
