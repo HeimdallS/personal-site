@@ -18,18 +18,27 @@
 
   &__profile-pic {
     margin-bottom: 2rem;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
   }
 
   &__subhead {
     margin: 0;
+    font-size: 1.5rem;
   }
 
   &__personal-statement {
     margin: 0;
     text-align: center;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
     padding-top: 0.5rem;
     margin-bottom: 2rem;
+  }
+
+  &__highlight {
+    font-weight: 700;
+    color: #f0e0a2;
   }
 
   &__link-container {
@@ -53,12 +62,6 @@
     color: white;
   }
 
-  &__profile-pic {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-  }
-
   &__box-area {
     position: absolute;
     padding: 0;
@@ -79,7 +82,7 @@
     height: 25px;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 20s linear infinite;
-    bottom: -150px;
+    bottom: -10px;
     border-radius: 50%;
 
     &--1 {
