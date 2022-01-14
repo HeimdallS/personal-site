@@ -9,9 +9,9 @@ export default function HomePage() {
         <main className="content">
             <div className="content__container">
                 <div className="content__text-container">
-                    <h2 className="content__subhead">Hey there, thanks for viewing my page.</h2>
+                    <h2 className="content__subhead">Hey there, my name's Heimdall Sham</h2>
                     <p className="content__personal-statement">
-                        My name's Heimdall Sham and i'm a full stack web developer. I pride myself on my proficient with HTML/CSS, JavaScript, React, Node, and a multitidue of 
+                        Thanks for viewing my page. I'm a full stack developer proficient with HTML/CSS, JavaScript, React, Node, and a multitidue of 
                         other frameworks and libraries. Enjoy perusing my portfolio, and please feel free to reach out!   
                     </p>
                     <div className="content__link-container">
