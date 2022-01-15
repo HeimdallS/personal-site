@@ -82,7 +82,7 @@
     height: 25px;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 20s linear infinite;
-    bottom: -10px;
+    bottom: -150px;
     border-radius: 50%;
 
     &--1 {
@@ -128,6 +128,30 @@
       width: 110px;
       height: 110px;
       animation-delay: 3.5s;
+    }
+
+    &--1[animation="1"] {
+      animation-play-state: paused;
+    }
+
+    &--2[animation="1"] {
+      animation-play-state: paused;
+    }
+
+    &--3[animation="1"] {
+      animation-play-state: paused;
+    }
+
+    &--4[animation="1"] {
+      animation-play-state: paused;
+    }
+
+    &--5[animation="1"] {
+      animation-play-state: paused;
+    }
+
+    &--6[animation="1"] {
+      animation-play-state: paused;
     }
   }
 }

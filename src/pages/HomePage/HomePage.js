@@ -1,14 +1,25 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import * as BsIcon from 'react-icons/bs';
 import * as AiIcon from 'react-icons/ai';
-import './HomePage.scss';
-import stars from '../../assets/images/stars.jpg'
+import styles from './HomePage.scss';
+import stars from '../../assets/images/stars.jpg';
+import {useSpring, animated} from 'react-spring';
 
 export default function HomePage() {
 
-    const handleAnimation = (e) => {
-        e.preventDefault()
+    const [toggle, setToggle] = useState(false)
+    const [animation, setAnimation] = useState(0)
+
+    const handleClick = () => {
+        setToggle(!toggle)
     }
+
+    useEffect(() => {
+        const renderAnimations = () => {
+            return toggle ? setAnimation(1) : setAnimation(0)
+        }
+        renderAnimations()
+    }, [toggle])
 
     return (
         <main className="content">
@@ -32,16 +43,34 @@ export default function HomePage() {
                     </div>
                 </div>
                 <img src={stars} alt="star gazing" className='content__profile-pic' />
-                <button className="content__animation-start-stop">On/Off</button>
+                <button className="content__animationButt" onClick={handleClick}>On/Off</button>
             </div>
 
+            {/* <ul className="content__box-area">
+                <animated.li className="content__boxes content__boxes--1"></animated.li>
+                <animated.li className="content__boxes content__boxes--2"></animated.li>
+                <animated.li className="content__boxes content__boxes--3"></animated.li>
+                <animated.li className="content__boxes content__boxes--4"></animated.li>
+                <animated.li className="content__boxes content__boxes--5"></animated.li>
+                <animated.li className="content__boxes content__boxes--6"></animated.li>
+            </ul> */}
+
+            {/* <ul className="content__box-area">
+                <li className={pause1}></li>
+                <li className={pause2}></li>
+                <li className={pause3}></li>
+                <li className={pause4}></li>
+                <li className={pause5}></li>
+                <li className={pause6}></li>
+            </ul> */}
+
             <ul className="content__box-area">
-                <li className="content__boxes content__boxes--1"></li>
-                <li className="content__boxes content__boxes--2"></li>
-                <li className="content__boxes content__boxes--3"></li>
-                <li className="content__boxes content__boxes--4"></li>
-                <li className="content__boxes content__boxes--5"></li>
-                <li className="content__boxes content__boxes--6"></li>
+                <li className="content__boxes content__boxes--1" animation={animation}></li>
+                <li className="content__boxes content__boxes--2" animation={animation}></li>
+                <li className="content__boxes content__boxes--3" animation={animation}></li>
+                <li className="content__boxes content__boxes--4" animation={animation}></li>
+                <li className="content__boxes content__boxes--5" animation={animation}></li>
+                <li className="content__boxes content__boxes--6" animation={animation}></li>
             </ul>
         </main>
     )
