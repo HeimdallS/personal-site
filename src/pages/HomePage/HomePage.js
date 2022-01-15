@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import * as BsIcon from 'react-icons/bs';
 import * as AiIcon from 'react-icons/ai';
-import styles from './HomePage.scss';
+import './HomePage.scss';
 import stars from '../../assets/images/stars.jpg';
-import {useSpring, animated} from 'react-spring';
 
 export default function HomePage() {
 
