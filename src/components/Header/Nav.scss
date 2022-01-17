@@ -1,4 +1,6 @@
 @use "../../partials/typography.scss";
+@use "../../partials/variables.scss" as *;
+@use "../../partials/mixins.scss" as *;
 
 .header {
   display: flex;
@@ -8,12 +10,30 @@
   margin-top: 1rem;
   margin-bottom: 2rem;
 
+  @include tablet {
+    flex-direction: row;
+  }
+
   &__logo {
     font-family: Mr De Haviland;
     font-size: 3rem;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 1rem;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__logo-tablet {
+    font-family: Mr De Haviland;
+    display: none;
+
+    @include tablet {
+      display: contents;
+      font-size: 3rem;
+    }
   }
 
   &__routes {
@@ -25,10 +45,19 @@
     display: flex;
     margin: 0;
     padding-left: 0;
+
+    @include tablet {
+      justify-content: flex-end;
+      font-size: 1.5rem;
+    }
   }
 
   &__route {
     list-style-type: none;
+
+    @include tablet {
+      margin-left: 3rem;
+    }
 
     &:hover {
       color: #ebd580;

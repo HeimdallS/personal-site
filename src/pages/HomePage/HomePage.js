@@ -17,9 +17,9 @@ export default function HomePage() {
         <main className="content">
             <div className="content__container">
                 <div className="content__text-container">
-                    <h2 className="content__subhead">Hey there, my name's Heimdall Sham</h2>
+                    <h2 className="content__subhead">Hi, my name's Heimdall</h2>
                     <p className="content__personal-statement">
-                        Thanks for viewing my page. I'm a Full Stack Web Developer proficient with <span className='content__highlight'>HTML/CSS</span>, <span className='content__highlight'>JavaScript</span>, <span className='content__highlight'>React</span>, <span className='content__highlight'>Node</span>, and a multitidue of 
+                        Thanks for visiting my page. I'm a Full Stack Web Developer proficient with <span className='content__highlight'>HTML/CSS</span>, <span className='content__highlight'>JavaScript</span>, <span className='content__highlight'>React</span>, <span className='content__highlight'>Node</span>, and a multitidue of 
                         other frameworks and libraries. Enjoy perusing my portfolio, and feel free to reach out and chat with me sometime.   
                     </p>
                     <div className="content__link-container">
