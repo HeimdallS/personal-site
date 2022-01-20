@@ -62,7 +62,8 @@
     color: white;
   }
 
-  &__toggle-colour {
-    color: green;
+  &__toggle {
+    display: flex;
+    justify-content: flex-end;
   }
 }

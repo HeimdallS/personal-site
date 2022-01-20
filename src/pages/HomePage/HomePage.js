@@ -7,11 +7,11 @@ import { styled } from '@mui/system';
 import SwitchUnstyled, { switchUnstyledClasses } from '@mui/base/SwitchUnstyled';
 import stars from '../../assets/images/stars.jpg';
 
-const blue = {
-    500: '#028a0f',
+const on = {
+    500: '#ebd580',
   };
   
-  const grey = {
+  const off = {
     400: '#BFC7CF',
     500: '#AAB4BE',
   };
@@ -20,14 +20,14 @@ const Root = styled('span')`
 
   font-size: 0;
   position: relative;
-  display: inline-block;
+  display: flex;
   width: 40px;
   height: 20px;
   margin: 10px;
   cursor: pointer;
 
   & .${switchUnstyledClasses.track} {
-    background: ${grey[400]};
+    background: ${off[400]};
     border-radius: 10px;
     display: block;
     height: 100%;
@@ -48,7 +48,7 @@ const Root = styled('span')`
   }
 
   &.${switchUnstyledClasses.focusVisible} .${switchUnstyledClasses.thumb} {
-    background-color: ${grey[500]};
+    background-color: ${off[500]};
     box-shadow: 0 0 1px 8px rgba(0, 0, 0, 0.25);
   }
 
@@ -60,7 +60,7 @@ const Root = styled('span')`
     }
 
     .${switchUnstyledClasses.track} {
-      background: ${blue[500]};
+      background: ${on[500]};
     }
   }
 
@@ -107,9 +107,11 @@ export default function HomePage() {
                     </div>
                 </div>
                 <img src={stars} alt="star gazing" className='content__profile-pic' />
-                <SwitchUnstyled component={Root} onChange={handleClick} defaultChecked/> 
             </div>
             <Animation toggle={toggle}/>
+            <div className="content__toggle">
+                <SwitchUnstyled component={Root} onChange={handleClick} defaultChecked/> 
+            </div>
         </main>
     )
 }
