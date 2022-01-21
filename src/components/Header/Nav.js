@@ -9,7 +9,7 @@ export default function Header() {
             <h1 className="header__logo">Heimdall Sham</h1>
             <h1 className="header__logo-tablet">HS</h1>
             <ul className='header__routes'>
-                <li className='header__route'>About</li>
+               <Link to='/about' className='header__link'><li className='header__route'>About</li></Link>
                 <li className='header__route'>Projects</li>
             </ul>
         </nav>
