@@ -10,7 +10,7 @@
     height: 6.5rem;
     border-radius: 50%;
     background-color: #fff;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 8px 5px 5px #2f4f4f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background-color: #2f4f4f;
+    background-color: #7f6914;
   }
 
   &__img-text {
@@ -58,5 +58,6 @@
     font-size: 1.2rem;
     font-weight: 700;
     transform: translate(-50%, -50%);
+    cursor: default;
   }
 }
