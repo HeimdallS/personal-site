@@ -72,7 +72,7 @@ function AboutPage() {
                         </div>
                     </div>
                     <div className="about__stacks-container">
-                        <img src={react} alt="light blue nebula react icon" className="about__stack-icon" />
+                        <img src={react} alt="light blue nebula react icon" className="about__stack-icon about__stack-icon--react" />
                         <div className="about__img-overlay">
                             <div className="about__img-text">
                                 React
