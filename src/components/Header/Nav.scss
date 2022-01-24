@@ -11,8 +11,16 @@
   margin-bottom: 2rem;
 
   @include desktop {
-    width: $breakpoint-desktop;
-    margin: auto;
+    width: 1200px;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__logo-container {
+    @include tablet {
+      width: 14rem;
+    }
   }
 
   &__logo-link {
@@ -42,7 +50,7 @@
 
     @include tablet {
       display: contents;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
   }
 
