@@ -12,7 +12,7 @@ export default function Header() {
             </div>
             <ul className='header__routes'>
                <Link to='/about' className='header__link'><li className='header__route'>About</li></Link>
-                <li className='header__route'>Projects</li>
+                <Link to='projects' className='header__link'><li className='header__route'>Projects</li></Link>
             </ul>
         </nav>
     )
