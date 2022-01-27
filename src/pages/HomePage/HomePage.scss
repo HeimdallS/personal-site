@@ -2,8 +2,8 @@
 @use "../../partials/variables.scss" as *;
 
 .content {
+  height: 75vh;
   @include tablet {
-    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
     align-items: center;
 
     @include tablet {
-      width: 57rem;
+      width: 64rem;
       flex-direction: row;
       margin-left: auto;
       margin-right: auto;
@@ -36,14 +36,14 @@
   }
 
   &__profile-pic {
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
     width: 17rem;
     height: 17rem;
     border-radius: 50%;
 
     @include tablet {
-      width: 20rem;
-      height: 20rem;
+      width: 22rem;
+      height: 22rem;
     }
   }
 
@@ -59,14 +59,14 @@
   &__personal-statement {
     margin: 0;
     text-align: center;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     padding-top: 0.5rem;
     margin-bottom: 2rem;
 
     @include tablet {
       text-align: start;
-      font-size: 1.4rem;
-      line-height: 1.6rem;
+      font-size: 1.2rem;
+      line-height: 2.3rem;
     }
   }
 
@@ -91,6 +91,11 @@
 
   &__nav-link {
     text-decoration: none;
+    width: 1.5rem;
+
+    @include tablet {
+      margin-right: 6rem;
+    }
   }
 
   &__nav-icon {

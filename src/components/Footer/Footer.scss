@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__copyright {
+    font-size: 0.8rem;
+  }
+}
