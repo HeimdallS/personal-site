@@ -2,6 +2,8 @@
 @use "../../partials/variables.scss" as *;
 
 .about {
+  height: 100vh;
+
   &__background-container {
     display: flex;
     flex-direction: column;

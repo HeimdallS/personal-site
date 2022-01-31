@@ -20,21 +20,27 @@ export default function Carousel() {
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
-    console.log(current)
-
     return (
         <section className="carousel">
             <MdIcon.MdArrowBackIos className='carousel__left-arrow' onClick={prevSlide}/>
-            <MdIcon.MdArrowForwardIos className='carousel__right-arrow' onClick={nextSlide} />
             {CarouselData.map((carousel, index) => {
                 return (
                     <div key={carousel.key} className={index === current ? 'carousel__slide-active' : 'carousel__slide'}>
                         {index === current && (
-                            <img src={carousel.image} alt="animal thumbnail" className='carousel__thumbnails' />
+                            <>
+                                <img src={carousel.image} alt="animal thumbnail" className='carousel__thumbnails' />
+                                <h3 className="carousel__project-title">{carousel.title}</h3>
+                                <div className="carousel__project-links">
+                                    {carousel.github}
+                                </div>
+                                <p className="carousel__project-description">{carousel.description}</p>
+                            </>
+                            
                         )}
                     </div>
                 )
             })}
+            <MdIcon.MdArrowForwardIos className='carousel__right-arrow' onClick={nextSlide} />
         </section>
     )
 }

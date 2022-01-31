@@ -8,7 +8,7 @@ import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 
 function App() {
   return (
-    <div >
+    <div className='app'>
       <Header/>
       <>
         <Routes>
@@ -17,7 +17,9 @@ function App() {
           <Route path='/projects' element={<ProjectsPage />} />
         </Routes>
       </>
-      <Footer />
+      <div className="app__foot-container">
+        <Footer className='app__foot'/>
+      </div>
     </div>
   );
 }

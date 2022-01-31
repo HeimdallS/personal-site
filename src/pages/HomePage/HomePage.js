@@ -7,6 +7,8 @@ import { styled } from '@mui/system';
 import SwitchUnstyled, { switchUnstyledClasses } from '@mui/base/SwitchUnstyled';
 import stars from '../../assets/images/stars.jpg';
 
+// Preferred reduce motion
+
 const on = {
     500: '#ebd580',
   };
@@ -96,13 +98,13 @@ export default function HomePage() {
                   other frameworks and libraries. Enjoy perusing my portfolio, and feel free to reach out and chat with me sometime.   
               </p>
               <div className="content__link-container">
-                  <a href="https://www.linkedin.com/in/heimdall-sham/" className='content__nav-link'>
+                  <a href="https://www.linkedin.com/in/heimdall-sham/" className='content__nav-link' target="_blank" rel='noreferrer'>
                   <BsIcon.BsLinkedin className='content__nav-icon'/>
                   </a>
-                  <a href="https://github.com/HeimdallS" className='content__nav-link'>
+                  <a href="https://github.com/HeimdallS" className='content__nav-link' target="_blank" rel='noreferrer'>
                       <BsIcon.BsGithub className='content__nav-icon'/>
                   </a>
-                  <a href="mailto:sham.heim@gmail.com" className='content__nav-link'>
+                  <a href="mailto:sham.heim@gmail.com" className='content__nav-link' target="_blank" rel='noreferrer'>
                       <AiIcon.AiOutlineMail className='content__nav-icon'/>
                   </a>
               </div>

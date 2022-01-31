@@ -17,3 +17,14 @@ body {
     padding: 0 2rem;
   }
 }
+
+.app {
+  position: relative;
+
+  &__foot-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}

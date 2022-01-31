@@ -1,8 +1,11 @@
+@use "../../partials/mixins.scss" as *;
+@use "../../partials/variables.scss" as *;
+
 .carousel {
-  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 3.5rem;
 
   &__slide {
     opacity: 0;
@@ -13,31 +16,57 @@
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__thumbnails {
-    width: 10rem;
-    height: 10rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 10px;
   }
 
+  &__project-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+  }
+
   &__left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
     font-size: 3rem;
     z-index: 10;
     cursor: pointer;
     user-select: none;
+    margin-right: 4rem;
+    margin-top: 9rem;
   }
 
   &__right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
     font-size: 3rem;
     z-index: 10;
     cursor: pointer;
     user-select: none;
+    margin-left: 4rem;
+    margin-top: 9rem;
+  }
+
+  &__project-description {
+    max-width: 30rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+
+    @include tablet {
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
   }
 }

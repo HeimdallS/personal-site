@@ -2,7 +2,8 @@
 @use "../../partials/variables.scss" as *;
 
 .content {
-  height: 75vh;
+  position: relative;
+  height: 85vh;
   @include tablet {
     display: flex;
     justify-content: center;
@@ -110,7 +111,8 @@
   }
 
   &__toggle {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
   }
 }

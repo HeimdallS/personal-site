@@ -1,0 +1,33 @@
+@use "../../partials/mixins.scss" as *;
+@use "../../partials/variables.scss" as *;
+
+.projects {
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include tablet {
+    max-width: 52rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__subhead-container {
+    @include tablet {
+      width: 100%;
+      align-items: flex-start;
+    }
+  }
+
+  &__subhead {
+    font-size: 1.5rem;
+    margin: 0;
+
+    @include tablet {
+      align-items: flex-start;
+      font-size: 2rem;
+    }
+  }
+}
