@@ -1,13 +1,12 @@
-import hamster from '../assets/images/hamster.jpeg'
+import capstone from '../assets/images/prime-performance.png'
 import puppy from '../assets/images/puppy.jpeg'
 import kitty from '../assets/images/kitty.jpeg'
 import * as BsIcon from 'react-icons/bs';
-import * as AiIcon from 'react-icons/ai';
 
 export const CarouselData = [
     {
         key: 1,
-        image: `${hamster}`,
+        image: `${capstone}`,
         github: <a href="https://github.com/HeimdallS/capstone-prime-performance" target="_blank" rel='noreferrer'>
         <BsIcon.BsGithub className='carousel__nav-icon'/>
                 </a>,

@@ -35,7 +35,6 @@ export default function Carousel() {
                                 </div>
                                 <p className="carousel__project-description">{carousel.description}</p>
                             </>
-                            
                         )}
                     </div>
                 )

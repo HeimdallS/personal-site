@@ -23,9 +23,14 @@
   }
 
   &__thumbnails {
-    width: 11rem;
-    height: 11rem;
+    width: 14rem;
+    height: 14rem;
     border-radius: 10px;
+
+    @include tablet {
+      width: 17rem;
+      height: 17rem;
+    }
   }
 
   &__project-links {
@@ -47,7 +52,11 @@
     cursor: pointer;
     user-select: none;
     margin-right: 4rem;
-    margin-top: 9rem;
+    margin-top: 13rem;
+
+    @include tablet {
+      margin-top: 16rem;
+    }
   }
 
   &__right-arrow {
@@ -56,7 +65,11 @@
     cursor: pointer;
     user-select: none;
     margin-left: 4rem;
-    margin-top: 9rem;
+    margin-top: 13rem;
+
+    @include tablet {
+      margin-top: 16rem;
+    }
   }
 
   &__project-description {
@@ -65,7 +78,7 @@
     line-height: 1.4rem;
 
     @include tablet {
-      font-size: 1rem;
+      font-size: 1.05rem;
       line-height: 1.8rem;
     }
   }
