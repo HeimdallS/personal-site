@@ -32,6 +32,7 @@ export default function Carousel() {
                                 <h3 className="carousel__project-title">{carousel.title}</h3>
                                 <div className="carousel__project-links">
                                     {carousel.github}
+                                    {carousel.link}
                                 </div>
                                 <p className="carousel__project-description">{carousel.description}</p>
                             </>
