@@ -15,7 +15,7 @@ export const CarouselData = [
         <FiIcon.FiExternalLink className='carousel__nav-icon'/>
                 </a>,
         title: "Prime Performance",
-        description: "A full stack personal workout application for both beginners and experienced fitness enthusiasts. Utilizing React, Express, Node.js, and Sass, Prime Performance allows users to find new exercise routines, customize their own workouts, as well as generate a randomized workout for individuals who feel that their growth has plateued with their existing workout."
+        description: "A full stack personal workout application for both beginners and experienced fitness enthusiasts. Utilizing React, Express, Node.js, and Sass, Prime Performance allows users to find new exercise routines, customize their own workouts, or generate a randomized workout for individuals who feel that their growth has plateued with their existing workout."
     },
     {
         key: 2,

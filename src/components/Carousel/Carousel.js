@@ -22,25 +22,32 @@ export default function Carousel() {
 
     return (
         <section className="carousel">
-            <MdIcon.MdArrowBackIos className='carousel__left-arrow' onClick={prevSlide}/>
-            {CarouselData.map((carousel, index) => {
-                return (
-                    <div key={carousel.key} className={index === current ? 'carousel__slide-active' : 'carousel__slide'}>
-                        {index === current && (
-                            <>
-                                <img src={carousel.image} alt="animal thumbnail" className='carousel__thumbnails' />
-                                <h3 className="carousel__project-title">{carousel.title}</h3>
-                                <div className="carousel__project-links">
-                                    {carousel.github}
-                                    {carousel.link}
-                                </div>
-                                <p className="carousel__project-description">{carousel.description}</p>
-                            </>
-                        )}
-                    </div>
-                )
-            })}
-            <MdIcon.MdArrowForwardIos className='carousel__right-arrow' onClick={nextSlide} />
+            <div className="carousel__container">
+                <MdIcon.MdArrowBackIos className='carousel__left-arrow' onClick={prevSlide}/>
+                {CarouselData.map((carousel, index) => {
+                    return (
+                        <div key={carousel.key} className={index === current ? 'carousel__slide-active' : 'carousel__slide'}>
+                            {index === current && (
+                                <>
+                                    <img src={carousel.image} alt="animal thumbnail" className='carousel__thumbnails' />
+                                    <h3 className="carousel__project-title">{carousel.title}</h3>
+                                    <div className="carousel__project-links">
+                                        {carousel.github}
+                                        {carousel.link}
+                                    </div>
+                                    <p className="carousel__project-description">{carousel.description}</p>
+                                </>
+                            )}
+                        </div>
+                    )
+                })}
+                <MdIcon.MdArrowForwardIos className='carousel__right-arrow' onClick={nextSlide} />
+            </div>
+            <ul className="carousel__indicator">
+                <li className="carousel__nav"></li>
+                <li className="carousel__nav"></li>
+                <li className="carousel__nav"></li>
+            </ul>
         </section>
     )
 }
