@@ -18,7 +18,7 @@ function App() {
         </Routes>
       </>
       <div className="app__foot-container">
-        <Footer className='app__foot'/>
+        <Footer/>
       </div>
     </div>
   );

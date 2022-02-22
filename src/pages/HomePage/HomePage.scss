@@ -38,12 +38,14 @@
   }
 
   &__profile-pic {
+    margin-top: 2rem;
     margin-bottom: 3.5rem;
     width: 17rem;
     height: 17rem;
     border-radius: 50%;
 
     @include tablet {
+      margin-top: 0;
       width: 22rem;
       height: 22rem;
     }
